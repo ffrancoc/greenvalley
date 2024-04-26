@@ -59,7 +59,7 @@ header .hero {
 /* Estilos seccion tienda */
 
 main section:nth-child(1) {
-    background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
     width: 100%;
 }
 
@@ -127,6 +127,57 @@ main section:nth-child(1) {
     max-width: 350px;
 }
 
+/* Estilos session servicios */
+
+main section:nth-child(2) {
+    background: linear-gradient(0deg, rgba(252, 220, 69, 1), rgba(248, 184, 75, 1)); 
+    width: 100%;
+}
+
+.servicios {
+    color: rgb(0, 0, 0);
+    padding: 50px 0px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+}
+
+.servicios-grid div:nth-child(1),
+.servicios-grid div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.servicios-grid div:nth-child(1) .picture {
+    background-image: url('../img//service-1.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;    
+}
+
+.servicios-grid div:nth-child(2) .picture {
+    background-image: url('../img//service-2.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;    
+}
+
+.servicios-grid div:nth-child(1) p,
+.servicios-grid div:nth-child(2) p {
+    max-width: 350px;
+}
+
 
 @media screen and (min-width: 800px) {
 
@@ -145,5 +196,10 @@ main section:nth-child(1) {
     /* Estilos seccion Tienda */
     .tienda-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Estilos seccion servicios */
+    .servicios-grid {        
+        grid-template-columns: repeat(2, 1fr);
     }
 }
