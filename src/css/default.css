@@ -10,6 +10,7 @@ html {
     font-family: "Ojuju", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 /* Estilos de Navbar */
@@ -178,6 +179,41 @@ main section:nth-child(2) {
     max-width: 350px;
 }
 
+/* Estilos seccion direccion */
+main section:nth-child(3) {
+    width: 100%;
+}
+
+.ubicacion {
+    color: rgb(0, 0, 0);
+}
+
+.ubicacion-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.ubicacion-flex .picture {
+    background-image: url('../img//mapview.jpg');
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ubicacion-flex div:nth-child(1) {
+    display: flex;    
+    justify-content: space-evenly;    
+}
+.ubicacion-flex div div {
+    display: flex;
+    flex-direction: column;    
+    margin: 20px 0px;
+}
 
 @media screen and (min-width: 800px) {
 
@@ -201,5 +237,20 @@ main section:nth-child(2) {
     /* Estilos seccion servicios */
     .servicios-grid {        
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Estilos seccion ubicacion */
+    .ubicacion-flex {
+        margin-top: 30px;
+    }
+
+    .ubicacion-flex .picture {
+        height: 400px;
+    }
+
+    .ubicacion .ubicacion-info{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
     }
 }
