@@ -205,6 +205,11 @@ main section:nth-child(3) {
     background-size: cover;
 }
 
+
+.ubicacion-flex h2 {        
+    margin-top: 30px;
+}
+
 .ubicacion-flex div:nth-child(1) {
     display: flex;    
     justify-content: space-evenly;    
@@ -346,6 +351,11 @@ main section:nth-child(4) {
     }
 
     /* Estilos seccion nosotros */
+    .nosotros-flex p{
+        width: 500px;        
+    }
+    
+
     .personas {        
         gap: 60px;
         flex-direction: row;        
