@@ -128,7 +128,7 @@ main section:nth-child(1) {
     max-width: 350px;
 }
 
-/* Estilos session servicios */
+/* Estilos seccion servicios */
 
 main section:nth-child(2) {
     background: linear-gradient(0deg, rgba(252, 220, 69, 1), rgba(248, 184, 75, 1)); 
@@ -215,6 +215,82 @@ main section:nth-child(3) {
     margin: 20px 0px;
 }
 
+/* Estilos seccion nosotros */
+
+main section:nth-child(4) {
+    background: linear-gradient(0deg, rgba(252, 220, 69, 1), rgba(248, 184, 75, 1)); 
+    width: 100%;
+}
+
+.nosotros {
+    color: rgb(0, 0, 0);
+    padding: 50px 0px;
+}
+
+.nosotros-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nosotros-flex p{
+    width: 300px;
+    text-align: center;
+}
+
+.nosotros-flex .picture:nth-child(1) {
+    background-image: url('../img//favicon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+
+.nosotros-flex div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 20px;
+}
+
+/* Estilos seccion nosotros */
+.personas {        
+    display: flex;
+    flex-direction: column;        
+}
+
+.nosotros-flex div:nth-child(1) .picture {
+    background-image: url('../img//man.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;    
+}
+
+
+.nosotros-flex div:nth-child(2) .picture {
+    background-image: url('../img//woman.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+
+.nosotros-flex div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
 @media screen and (min-width: 800px) {
 
     /* Estilos seccion menu */
@@ -253,4 +329,11 @@ main section:nth-child(3) {
         flex-direction: row;
         gap: 80px;
     }
+
+    /* Estilos seccion nosotros */
+    .personas {        
+        gap: 60px;
+        flex-direction: row;        
+    }
+    
 }
