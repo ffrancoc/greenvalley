@@ -291,6 +291,21 @@ main section:nth-child(4) {
     align-items: center;    
 }
 
+ /* Estilos para el footer */
+ footer {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 20px 0px;
+    text-align: center;
+ }
+
+ footer .social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+ }
+
 @media screen and (min-width: 800px) {
 
     /* Estilos seccion menu */
@@ -335,5 +350,15 @@ main section:nth-child(4) {
         gap: 60px;
         flex-direction: row;        
     }
+    
+    /* Estilos del footer */
+    footer {
+        display: flex;
+        justify-content: center;        
+    }
+
+    footer .social {
+        width: 400px;
+     }
     
 }
